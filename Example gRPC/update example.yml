@@ -1,0 +1,17 @@
+info:
+  name: update example
+  type: grpc
+  seq: 5
+
+grpc:
+  url: "{{url}}"
+  method: /example.v1.ExampleService/UpdateExample
+  methodType: unary
+  message: |-
+    {
+      "id": "019c8a47-2819-7aa1-bf71-6425403ede5b",
+      "example": {
+        "name": "test sample 001"
+      }
+    }
+  auth: inherit

@@ -1,0 +1,14 @@
+info:
+  name: delete example
+  type: grpc
+  seq: 6
+
+grpc:
+  url: "{{url}}"
+  method: /example.v1.ExampleService/DeleteExample
+  methodType: unary
+  message: |-
+    {
+      "id": "019c8941-c438-7604-951e-41b6cb6b36ef"
+    }
+  auth: inherit

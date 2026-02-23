@@ -1,0 +1,14 @@
+info:
+  name: get example
+  type: grpc
+  seq: 1
+
+grpc:
+  url: "{{url}}"
+  method: /example.v1.ExampleService/GetExample
+  methodType: unary
+  message: |-
+    {
+      "id": "019c8589-9ac3-7a4c-9836-b054e4324239"
+    }
+  auth: inherit
