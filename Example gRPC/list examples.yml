@@ -1,7 +1,7 @@
 info:
   name: list examples
   type: grpc
-  seq: 3
+  seq: 2
 
 grpc:
   url: "{{url}}"
