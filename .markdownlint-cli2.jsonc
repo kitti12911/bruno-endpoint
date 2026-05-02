@@ -1,11 +1,7 @@
 {
-  "config": {
-    "MD013": false
-  },
-  "globs": [
-    "**/*.{md,markdown}"
-  ],
-  "ignores": [
-    ".github/CODEOWNERS"
-  ]
+    "config": {
+        "MD013": false
+    },
+    "globs": ["**/*.{md,markdown}"],
+    "ignores": [".github/CODEOWNERS"]
 }

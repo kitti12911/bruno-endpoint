@@ -23,10 +23,10 @@ Recommended collection layout:
 
 Use Bruno environments for service-specific values instead of hardcoding them in requests. Common variables should stay consistent across collections:
 
-| variable   | description                                          |
-| ---------- | ---------------------------------------------------- |
-| `baseUrl`  | base URL for the target service                      |
-| `token`    | bearer token for authenticated requests, when needed |
+| variable  | description                                          |
+| --------- | ---------------------------------------------------- |
+| `baseUrl` | base URL for the target service                      |
+| `token`   | bearer token for authenticated requests, when needed |
 
 Do not commit real secrets, long-lived tokens, or machine-specific values. Use local Bruno secrets for sensitive values.
 
