@@ -1,0 +1,30 @@
+info:
+  name: List Users
+  type: grpc
+  seq: 3
+
+grpc:
+  url: "{{url}}"
+  method: /user.v1.UserService/ListUsers
+  methodType: unary
+  message: |-
+    {
+      "pagination": {
+        "page": 1,
+        "page_size": 10
+      },
+      "filters": [
+        {
+          "col": "profile.first_name",
+          "op": "FILTER_OP_LIKE",
+          "val": "Active"
+        }
+      ],
+      "order_by": [
+        {
+          "col": "username",
+          "order": "ORDER_DIRECTION_DESC"
+        }
+      ]
+    }
+  auth: inherit

@@ -1,5 +1,5 @@
 info:
-  name: Get By ID
+  name: Get User
   type: grpc
   seq: 2
 
