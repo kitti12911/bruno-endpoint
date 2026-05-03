@@ -1,0 +1,32 @@
+info:
+  name: Create User
+  type: grpc
+  seq: 4
+
+grpc:
+  url: "{{url}}"
+  method: /user.v1.UserService/CreateUser
+  methodType: unary
+  message: |-
+    {
+      "user": {
+        "email": "new.user.2@example.com",
+        "username": "new_user_2",
+        "display_name": "New User",
+        "status": "USER_STATUS_PENDING",
+        "profile": {
+          "first_name": "New",
+          "last_name": "User",
+          "phone_number": "+66123456789",
+          "address": {
+            "line1": "123 Demo Road",
+            "line2": "Unit 7",
+            "city": "Bangkok",
+            "state": "Bangkok",
+            "postal_code": "10110",
+            "country_code": "TH"
+          }
+        }
+      }
+    }
+  auth: inherit
