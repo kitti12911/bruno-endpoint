@@ -1,0 +1,14 @@
+info:
+  name: Get By ID
+  type: grpc
+  seq: 2
+
+grpc:
+  url: "{{url}}"
+  method: /user.v1.UserService/GetUser
+  methodType: unary
+  message: |-
+    {
+      "id": "0198f8f0-0000-7000-8000-000000000001"
+    }
+  auth: inherit
