@@ -1,4 +1,4 @@
 name: UserServiceEnv
 variables:
-  - name: url
-    value: http://127.0.0.1:50051
+    - name: url
+      value: http://127.0.0.1:50051

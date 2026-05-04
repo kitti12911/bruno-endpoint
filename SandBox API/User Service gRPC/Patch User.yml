@@ -1,28 +1,28 @@
 info:
-  name: Patch User
-  type: grpc
-  seq: 7
+    name: Patch User
+    type: grpc
+    seq: 7
 
 grpc:
-  url: "{{url}}"
-  method: /user.v1.UserService/PatchUser
-  methodType: unary
-  message: |-
-    {
-      "id": "0198f8f0-0000-7000-8000-000000000002",
-      "user": {
-        "display_name": "Patched User",
-        "profile": {
-          "address": {
-            "city": "Demo City"
+    url: "{{url}}"
+    method: /user.v1.UserService/PatchUser
+    methodType: unary
+    message: |-
+        {
+          "id": "0198f8f0-0000-7000-8000-000000000002",
+          "user": {
+            "display_name": "Patched User",
+            "profile": {
+              "address": {
+                "city": "Demo City"
+              }
+            }
+          },
+          "update_mask": {
+            "paths": [
+              "display_name",
+              "profile.address.city"
+            ]
           }
         }
-      },
-      "update_mask": {
-        "paths": [
-          "display_name",
-          "profile.address.city"
-        ]
-      }
-    }
-  auth: inherit
+    auth: inherit

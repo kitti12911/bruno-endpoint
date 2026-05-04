@@ -1,33 +1,33 @@
 info:
-  name: Update User
-  type: grpc
-  seq: 6
+    name: Update User
+    type: grpc
+    seq: 6
 
 grpc:
-  url: "{{url}}"
-  method: /user.v1.UserService/UpdateUser
-  methodType: unary
-  message: |-
-    {
-      "id": "0198f8f0-0000-7000-8000-000000000002",
-      "user": {
-        "email": "updated.user@example.com",
-        "username": "updated_user",
-        "display_name": "Updated User",
-        "status": "USER_STATUS_ACTIVE",
-        "profile": {
-          "first_name": "Updated",
-          "last_name": "User",
-          "phone_number": "+66123456789",
-          "address": {
-            "line1": "456 Demo Road",
-            "line2": "Unit 8",
-            "city": "Bangkok",
-            "state": "Bangkok",
-            "postal_code": "10110",
-            "country_code": "TH"
+    url: "{{url}}"
+    method: /user.v1.UserService/UpdateUser
+    methodType: unary
+    message: |-
+        {
+          "id": "0198f8f0-0000-7000-8000-000000000002",
+          "user": {
+            "email": "updated.user@example.com",
+            "username": "updated_user",
+            "display_name": "Updated User",
+            "status": "USER_STATUS_ACTIVE",
+            "profile": {
+              "first_name": "Updated",
+              "last_name": "User",
+              "phone_number": "+66123456789",
+              "address": {
+                "line1": "456 Demo Road",
+                "line2": "Unit 8",
+                "city": "Bangkok",
+                "state": "Bangkok",
+                "postal_code": "10110",
+                "country_code": "TH"
+              }
+            }
           }
         }
-      }
-    }
-  auth: inherit
+    auth: inherit

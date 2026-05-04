@@ -1,7 +1,7 @@
 info:
-  name: User Service gRPC
-  type: folder
-  seq: 1
+    name: User Service gRPC
+    type: folder
+    seq: 1
 
 request:
-  auth: inherit
+    auth: inherit

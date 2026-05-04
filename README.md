@@ -11,6 +11,14 @@ shared without depending on local-only client state.
 Open this repository with [Bruno](https://www.usebruno.com/) and add or import
 collections for the services you want to test.
 
+## requirements
+
+- [Bruno](https://www.usebruno.com/) for opening and running the collections
+
+Optional:
+
+- [prettier](https://prettier.io/) for Markdown, YAML, JSON, and JSONC formatting
+
 Current collection:
 
 ```bash
@@ -61,3 +69,11 @@ local Bruno secrets for sensitive values.
 
 The current gRPC requests target
 [`grpc-sandbox`](https://github.com/kitti12911/grpc-sandbox).
+
+## available commands
+
+```bash
+make fmt
+make pretty
+make format
+```
