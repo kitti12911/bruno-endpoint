@@ -14,7 +14,7 @@ grpc:
         "display_name": "Patched User",
         "profile": {
           "address": {
-            "city": "Chiang Mai"
+            "city": "Demo City"
           }
         }
       },
